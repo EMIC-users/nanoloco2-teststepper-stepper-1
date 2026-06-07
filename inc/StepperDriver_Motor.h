@@ -27,11 +27,13 @@ void StepperDriver_Motor_setSpeed(uint16_t stepsPerSecond);
 
 void StepperDriver_Motor_move(uint8_t direction, uint16_t steps);
 
+void StepperDriver_Motor_sleep(uint8_t state);
 
 
 
 /*==================[events]================================================*/
 
+extern void StepperDriver_Motor_onLimitSwitch(void);
 
 /*==================[end of file]============================================*/
 #endif

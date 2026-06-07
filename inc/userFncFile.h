@@ -14,6 +14,7 @@
 /* Function Prototypes */
 void onReset();
 void etOut1();
+void StepperDriver_Motor_onLimitSwitch();
 
 #endif /* USERFNCFILE_H */
 

@@ -12,9 +12,9 @@
 
 void onReset()
 {
-    LEDs_Led1_blink(100, 200, 3);
     StepperDriver_Motor_setMicrostep(4);
     StepperDriver_Motor_setSpeed(200);
+    LEDs_Led1_blink(100, 200, 3);
     setTime1(2000, 'A');
 }
 
@@ -22,6 +22,12 @@ void onReset()
 void etOut1()
 {
     StepperDriver_Motor_move(2, 400);
+}
+
+
+void StepperDriver_Motor_onLimitSwitch()
+{
+    StepperDriver_Motor_sleep(1);
 }
 
 

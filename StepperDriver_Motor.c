@@ -138,6 +138,7 @@ void StepperDriver_Motor_poll(void)
             homeState = homeDir ? 3 : 2;
         }
 
+        StepperDriver_Motor_onLimitSwitch();
     }
     limitPrev = limitCurrent;
 
