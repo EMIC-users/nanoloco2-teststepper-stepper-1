@@ -247,11 +247,11 @@ section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200              0x43e2          0x65d3  (26067)
 .const                      0x45e2                 0x8             0xc  (12)
-.text                       0x45ea               0xd48          0x13ec  (5100)
-.dinit                      0x5332                0xe8           0x15c  (348)
-.text                       0x541a               0x236           0x351  (849)
+.text                       0x45ea               0xd92          0x145b  (5211)
+.dinit                      0x537c                0xe8           0x15c  (348)
+.text                       0x5464               0x236           0x351  (849)
 
-                 Total "program" memory used (bytes):         0x7e78  (32376) 49%
+                 Total "program" memory used (bytes):         0x7ee7  (32487) 49%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x2000]
@@ -463,82 +463,82 @@ External Symbols in Program Memory (by address):
                   0x004e6c                  _StepperDriver_Motor_setMicrostep
                   0x004ebc                  _StepperDriver_Motor_setSpeed
                   0x004efe                  _StepperDriver_Motor_move
-                  0x004f2c                  _StepperDriver_Motor_sleep
-                  0x004f4e                  _StepperDriver_Motor_goHome
-                  0x004f80                  _StepperDriver_Motor_goTo
-                  0x004fe0                  _StepperDriver_Motor_poll
-                  0x00509e                  _streamPushCtr
-                  0x0050ec                  _streamPush
-                  0x005126                  _streamPop
-                  0x00515e                  _streamOpenWriteFrame
-                  0x0051a0                  _streamOpenReadFrame
-                  0x0051ec                  _streamReOpenReadFrame
-                  0x005204                  _streamCloseReadFrame
-                  0x00522e                  _Init_Master_I2C2
-                  0x005296                  _CollisionReset_I2C2
-                  0x00529e                  _OverflowReset_I2C2
-                  0x0052a6                  _IsStartI2c2
-                  0x0052b2                  _IsCollisionDetectI2c2
-                  0x0052be                  _IsStopI2c2
-                  0x0052ca                  _IsReceiveBufferFullI2c2
-                  0x0052d6                  _IsDataOrAddressI2c2
-                  0x0052e2                  _IsReceiveOverflowI2c2
-                  0x0052ee                  _Start_I2C2
-                  0x005300                  _Stop_I2C2
-                  0x005312                  _Write_I2C2
-                  0x00531e                  _Read_I2C2
-                  0x00541a                  _pI2C
-                  0x005436                  _EMICBus_init
-                  0x005444                  _poll_EMICBus
-                  0x0054d0                  _LEDs_Led1_init
-                  0x0054d8                  _LEDs_Led1_blink
-                  0x0054f8                  _LEDs_Led1_poll
-                  0x005556                  _setTime1
-                  0x005572                  _timer1_Poll
-                  0x0055b0                  _onReset
-                  0x0055ce                  _etOut1
-                  0x0055da                  _StepperDriver_Motor_onLimitSwitch
-                  0x0055e4                  _initSystem
-                  0x0055f2                  _main
-                  0x00560c                  _getSystemMilis
-                  0x005616                  _callback
-                  0x005628                  _systemTimeInit
-                  0x005632                  _timer4_init
-                  0x005648                  _LEDs_Led2_init
+                  0x004f48                  _StepperDriver_Motor_sleep
+                  0x004f7c                  _StepperDriver_Motor_goHome
+                  0x004fae                  _StepperDriver_Motor_goTo
+                  0x00500e                  _StepperDriver_Motor_poll
+                  0x0050e8                  _streamPushCtr
+                  0x005136                  _streamPush
+                  0x005170                  _streamPop
+                  0x0051a8                  _streamOpenWriteFrame
+                  0x0051ea                  _streamOpenReadFrame
+                  0x005236                  _streamReOpenReadFrame
+                  0x00524e                  _streamCloseReadFrame
+                  0x005278                  _Init_Master_I2C2
+                  0x0052e0                  _CollisionReset_I2C2
+                  0x0052e8                  _OverflowReset_I2C2
+                  0x0052f0                  _IsStartI2c2
+                  0x0052fc                  _IsCollisionDetectI2c2
+                  0x005308                  _IsStopI2c2
+                  0x005314                  _IsReceiveBufferFullI2c2
+                  0x005320                  _IsDataOrAddressI2c2
+                  0x00532c                  _IsReceiveOverflowI2c2
+                  0x005338                  _Start_I2C2
+                  0x00534a                  _Stop_I2C2
+                  0x00535c                  _Write_I2C2
+                  0x005368                  _Read_I2C2
+                  0x005464                  _pI2C
+                  0x005480                  _EMICBus_init
+                  0x00548e                  _poll_EMICBus
+                  0x00551a                  _LEDs_Led1_init
+                  0x005522                  _LEDs_Led1_blink
+                  0x005542                  _LEDs_Led1_poll
+                  0x0055a0                  _setTime1
+                  0x0055bc                  _timer1_Poll
+                  0x0055fa                  _onReset
+                  0x005618                  _etOut1
+                  0x005624                  _StepperDriver_Motor_onLimitSwitch
+                  0x00562e                  _initSystem
+                  0x00563c                  _main
+                  0x005656                  _getSystemMilis
+                  0x005660                  _callback
+                  0x005672                  _systemTimeInit
+                  0x00567c                  _timer4_init
+                  0x005692                  _LEDs_Led2_init
 
 External Symbols in Program Memory (by name):
 
-                  0x005296                  _CollisionReset_I2C2
-                  0x005436                  _EMICBus_init
+                  0x0052e0                  _CollisionReset_I2C2
+                  0x005480                  _EMICBus_init
                   0x004bbe                  _I2C_Begin_Transmision
                   0x004dd2                  _I2c_driver_callback_master
                   0x004d92                  _I2c_driver_callback_slave
                   0x004b82                  _Init_I2C_Driver
-                  0x00522e                  _Init_Master_I2C2
-                  0x0052b2                  _IsCollisionDetectI2c2
-                  0x0052d6                  _IsDataOrAddressI2c2
-                  0x0052ca                  _IsReceiveBufferFullI2c2
-                  0x0052e2                  _IsReceiveOverflowI2c2
-                  0x0052a6                  _IsStartI2c2
-                  0x0052be                  _IsStopI2c2
-                  0x0054d8                  _LEDs_Led1_blink
-                  0x0054d0                  _LEDs_Led1_init
-                  0x0054f8                  _LEDs_Led1_poll
-                  0x005648                  _LEDs_Led2_init
-                  0x00529e                  _OverflowReset_I2C2
-                  0x00531e                  _Read_I2C2
-                  0x0052ee                  _Start_I2C2
-                  0x004f4e                  _StepperDriver_Motor_goHome
-                  0x004f80                  _StepperDriver_Motor_goTo
+                  0x005278                  _Init_Master_I2C2
+                  0x0052fc                  _IsCollisionDetectI2c2
+                  0x005320                  _IsDataOrAddressI2c2
+                  0x005314                  _IsReceiveBufferFullI2c2
+                  0x00532c                  _IsReceiveOverflowI2c2
+                  0x0052f0                  _IsStartI2c2
+                  0x005308                  _IsStopI2c2
+                  0x005522                  _LEDs_Led1_blink
+                  0x00551a                  _LEDs_Led1_init
+                  0x005542                  _LEDs_Led1_poll
+                  0x005692                  _LEDs_Led2_init
+                  0x0052e8                  _OverflowReset_I2C2
+                  0x005368                  _Read_I2C2
+                  0x005338                  _Start_I2C2
+                  0x004f7c                  _StepperDriver_Motor_goHome
+                  0x004fae                  _StepperDriver_Motor_goTo
                   0x004e42                  _StepperDriver_Motor_init
                   0x004efe                  _StepperDriver_Motor_move
-                  0x0055da                  _StepperDriver_Motor_onLimitSwitch
-                  0x004fe0                  _StepperDriver_Motor_poll
+                  0x005624                  _StepperDriver_Motor_onLimitSwitch
+                  0x00500e                  _StepperDriver_Motor_poll
                   0x004e6c                  _StepperDriver_Motor_setMicrostep
                   0x004ebc                  _StepperDriver_Motor_setSpeed
-                  0x004f2c                  _StepperDriver_Motor_sleep
-                  0x005300                  _Stop_I2C2
-                  0x005312                  _Write_I2C2
+                  0x004f48                  _StepperDriver_Motor_sleep
+                  0x00534a                  _Stop_I2C2
+                  0x00535c                  _Write_I2C2
                   0x000350                  __DefaultInterrupt
                   0x00032a                  __MI2C2Interrupt
                   0x000304                  __SI2C2Interrupt
@@ -641,28 +641,28 @@ External Symbols in Program Memory (by name):
                   0x0009bc                  _atoi
                   0x000a1c                  _atol
                   0x000a84                  _atoll
-                  0x005616                  _callback
+                  0x005660                  _callback
                   0x0040be                  _copysignl
                   0x004ba2                  _countI2cStreamIn
-                  0x0055ce                  _etOut1
+                  0x005618                  _etOut1
                   0x0040f2                  _fabsl
                   0x004108                  _floorl
                   0x004202                  _fmodl
                   0x004b8e                  _getAvailable_out_count
                   0x004baa                  _getI2cStreamIn
-                  0x00560c                  _getSystemMilis
+                  0x005656                  _getSystemMilis
                   0x004d04                  _i2cCloseWriteFrame
                   0x004d46                  _i2cOpenReadFrame
                   0x004bd8                  _ini_I2C_IN
                   0x004c02                  _ini_I2C_OUT
                   0x004c2c                  _ini_I2C_OUT_FM
-                  0x0055e4                  _initSystem
-                  0x0055f2                  _main
+                  0x00562e                  _initSystem
+                  0x00563c                  _main
                   0x002554                  _memcpy
                   0x000ae8                  _memset
-                  0x0055b0                  _onReset
-                  0x00541a                  _pI2C
-                  0x005444                  _poll_EMICBus
+                  0x0055fa                  _onReset
+                  0x005464                  _pI2C
+                  0x00548e                  _poll_EMICBus
                   0x004cac                  _pop_I2C_IN
                   0x004cd0                  _pop_I2C_OUT
                   0x004cf4                  _pop_I2C_OUT_FM
@@ -673,10 +673,10 @@ External Symbols in Program Memory (by name):
                   0x004582                  _scalbnl
                   0x004884                  _sendDataToStream
                   0x004bb2                  _setI2cStreamOut
-                  0x005556                  _setTime1
+                  0x0055a0                  _setTime1
                   0x000bb0                  _snprintf
                   0x00349a                  _strcpy
-                  0x005204                  _streamCloseReadFrame
+                  0x00524e                  _streamCloseReadFrame
                   0x0045e2                  _streamIn_I2C
                   0x004844                  _streamIn_t_ptr_to_ascii
                   0x004626                  _streamIn_t_ptr_to_char
@@ -689,20 +689,20 @@ External Symbols in Program Memory (by name):
                   0x0046da                  _streamIn_t_ptr_to_uint32_t
                   0x004716                  _streamIn_t_ptr_to_uint64
                   0x004660                  _streamIn_t_ptr_to_uint8_t
-                  0x0051a0                  _streamOpenReadFrame
-                  0x00515e                  _streamOpenWriteFrame
+                  0x0051ea                  _streamOpenReadFrame
+                  0x0051a8                  _streamOpenWriteFrame
                   0x0045e6                  _streamOut_I2C
-                  0x005126                  _streamPop
-                  0x0050ec                  _streamPush
-                  0x00509e                  _streamPushCtr
-                  0x0051ec                  _streamReOpenReadFrame
+                  0x005170                  _streamPop
+                  0x005136                  _streamPush
+                  0x0050e8                  _streamPushCtr
+                  0x005236                  _streamReOpenReadFrame
                   0x002562                  _strlen
                   0x000c1a                  _strtod
                   0x000c14                  _strtof
                   0x000c20                  _strtold
-                  0x005628                  _systemTimeInit
-                  0x005572                  _timer1_Poll
-                  0x005632                  _timer4_init
+                  0x005672                  _systemTimeInit
+                  0x0055bc                  _timer1_Poll
+                  0x00567c                  _timer4_init
                   0x002592                  _tolower
                   0x0034a8                  _toupper
                   0x001fd4                  _vfprintf
@@ -2180,7 +2180,7 @@ __xc_reference_data
                     0xc5e2                  _streamIn_I2C
                     0xc5e6                  _streamOut_I2C
 
-.text             0x0045ea        0xd48
+.text             0x0045ea        0xd92
  .text            0x0045ea        0x598 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestStepper/Stepper_1\build\default\production\streamIn.o
                   0x0045ea                  _streamIn_t_ptr_to_float
                   0x004626                  _streamIn_t_ptr_to_char
@@ -2214,65 +2214,65 @@ __xc_reference_data
                   0x004d46                  _i2cOpenReadFrame
                   0x004d92                  _I2c_driver_callback_slave
                   0x004dd2                  _I2c_driver_callback_master
- .text            0x004e42        0x25c C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestStepper/Stepper_1\build\default\production\StepperDriver_Motor.o
+ .text            0x004e42        0x2a6 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestStepper/Stepper_1\build\default\production\StepperDriver_Motor.o
                   0x004e42                  _StepperDriver_Motor_init
                   0x004e6c                  _StepperDriver_Motor_setMicrostep
                   0x004ebc                  _StepperDriver_Motor_setSpeed
                   0x004efe                  _StepperDriver_Motor_move
-                  0x004f2c                  _StepperDriver_Motor_sleep
-                  0x004f4e                  _StepperDriver_Motor_goHome
-                  0x004f80                  _StepperDriver_Motor_goTo
-                  0x004fe0                  _StepperDriver_Motor_poll
- .text            0x00509e        0x190 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestStepper/Stepper_1\build\default\production\stream.o
-                  0x00509e                  _streamPushCtr
-                  0x0050ec                  _streamPush
-                  0x005126                  _streamPop
-                  0x00515e                  _streamOpenWriteFrame
-                  0x0051a0                  _streamOpenReadFrame
-                  0x0051ec                  _streamReOpenReadFrame
-                  0x005204                  _streamCloseReadFrame
- .text            0x00522e        0x104 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestStepper/Stepper_1\build\default\production\I2C2.o
-                  0x00522e                  _Init_Master_I2C2
-                  0x005296                  _CollisionReset_I2C2
-                  0x00529e                  _OverflowReset_I2C2
-                  0x0052a6                  _IsStartI2c2
-                  0x0052b2                  _IsCollisionDetectI2c2
-                  0x0052be                  _IsStopI2c2
-                  0x0052ca                  _IsReceiveBufferFullI2c2
-                  0x0052d6                  _IsDataOrAddressI2c2
-                  0x0052e2                  _IsReceiveOverflowI2c2
-                  0x0052ee                  _Start_I2C2
-                  0x005300                  _Stop_I2C2
-                  0x005312                  _Write_I2C2
-                  0x00531e                  _Read_I2C2
+                  0x004f48                  _StepperDriver_Motor_sleep
+                  0x004f7c                  _StepperDriver_Motor_goHome
+                  0x004fae                  _StepperDriver_Motor_goTo
+                  0x00500e                  _StepperDriver_Motor_poll
+ .text            0x0050e8        0x190 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestStepper/Stepper_1\build\default\production\stream.o
+                  0x0050e8                  _streamPushCtr
+                  0x005136                  _streamPush
+                  0x005170                  _streamPop
+                  0x0051a8                  _streamOpenWriteFrame
+                  0x0051ea                  _streamOpenReadFrame
+                  0x005236                  _streamReOpenReadFrame
+                  0x00524e                  _streamCloseReadFrame
+ .text            0x005278        0x104 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestStepper/Stepper_1\build\default\production\I2C2.o
+                  0x005278                  _Init_Master_I2C2
+                  0x0052e0                  _CollisionReset_I2C2
+                  0x0052e8                  _OverflowReset_I2C2
+                  0x0052f0                  _IsStartI2c2
+                  0x0052fc                  _IsCollisionDetectI2c2
+                  0x005308                  _IsStopI2c2
+                  0x005314                  _IsReceiveBufferFullI2c2
+                  0x005320                  _IsDataOrAddressI2c2
+                  0x00532c                  _IsReceiveOverflowI2c2
+                  0x005338                  _Start_I2C2
+                  0x00534a                  _Stop_I2C2
+                  0x00535c                  _Write_I2C2
+                  0x005368                  _Read_I2C2
 
-.dinit            0x005332         0xe8
- .dinit           0x005332         0xe8 data_init
+.dinit            0x00537c         0xe8
+ .dinit           0x00537c         0xe8 data_init
 
-.text             0x00541a        0x236
- .text            0x00541a         0xb6 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestStepper/Stepper_1\build\default\production\EMICBus.o
-                  0x00541a                  _pI2C
-                  0x005436                  _EMICBus_init
-                  0x005444                  _poll_EMICBus
- .text            0x0054d0         0x86 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestStepper/Stepper_1\build\default\production\led_Led1.o
-                  0x0054d0                  _LEDs_Led1_init
-                  0x0054d8                  _LEDs_Led1_blink
-                  0x0054f8                  _LEDs_Led1_poll
- .text            0x005556         0x5a C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestStepper/Stepper_1\build\default\production\timer_api1.o
-                  0x005556                  _setTime1
-                  0x005572                  _timer1_Poll
- .text            0x0055b0         0x34 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestStepper/Stepper_1\build\default\production\userFncFile.o
-                  0x0055b0                  _onReset
-                  0x0055ce                  _etOut1
-                  0x0055da                  _StepperDriver_Motor_onLimitSwitch
- .text            0x0055e4         0x28 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestStepper/Stepper_1\build\default\production\main.o
-                  0x0055e4                  _initSystem
-                  0x0055f2                  _main
- .text            0x00560c         0x26 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestStepper/Stepper_1\build\default\production\systemTimer.o
-                  0x00560c                  _getSystemMilis
-                  0x005616                  _callback
-                  0x005628                  _systemTimeInit
- .text            0x005632         0x16 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestStepper/Stepper_1\build\default\production\timer.o
-                  0x005632                  _timer4_init
- .text            0x005648          0x8 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestStepper/Stepper_1\build\default\production\led_Led2.o
-                  0x005648                  _LEDs_Led2_init
+.text             0x005464        0x236
+ .text            0x005464         0xb6 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestStepper/Stepper_1\build\default\production\EMICBus.o
+                  0x005464                  _pI2C
+                  0x005480                  _EMICBus_init
+                  0x00548e                  _poll_EMICBus
+ .text            0x00551a         0x86 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestStepper/Stepper_1\build\default\production\led_Led1.o
+                  0x00551a                  _LEDs_Led1_init
+                  0x005522                  _LEDs_Led1_blink
+                  0x005542                  _LEDs_Led1_poll
+ .text            0x0055a0         0x5a C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestStepper/Stepper_1\build\default\production\timer_api1.o
+                  0x0055a0                  _setTime1
+                  0x0055bc                  _timer1_Poll
+ .text            0x0055fa         0x34 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestStepper/Stepper_1\build\default\production\userFncFile.o
+                  0x0055fa                  _onReset
+                  0x005618                  _etOut1
+                  0x005624                  _StepperDriver_Motor_onLimitSwitch
+ .text            0x00562e         0x28 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestStepper/Stepper_1\build\default\production\main.o
+                  0x00562e                  _initSystem
+                  0x00563c                  _main
+ .text            0x005656         0x26 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestStepper/Stepper_1\build\default\production\systemTimer.o
+                  0x005656                  _getSystemMilis
+                  0x005660                  _callback
+                  0x005672                  _systemTimeInit
+ .text            0x00567c         0x16 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestStepper/Stepper_1\build\default\production\timer.o
+                  0x00567c                  _timer4_init
+ .text            0x005692          0x8 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestStepper/Stepper_1\build\default\production\led_Led2.o
+                  0x005692                  _LEDs_Led2_init

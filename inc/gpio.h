@@ -13,14 +13,14 @@ typedef enum
 typedef enum
 {
 	GPIO_LOW,
-	GPIO_HIGH,
-	GPIO_TOGGLE
+	GPIO_HIGH
 }gpio_state_t;
 
 
 
 #define HAL_GPIO_PinCfg(name,cfg_value) TRIS_##name = cfg_value
 #define HAL_GPIO_PinSet(name,value) PIN_##name = value
+#define HAL_GPIO_PinToggle(name) PIN_##name = !PIN_##name
 #define HAL_GPIO_PinGet(name) PIN_##name
 
 

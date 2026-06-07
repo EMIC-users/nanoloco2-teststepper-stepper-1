@@ -79,7 +79,7 @@ void StepperDriver_Motor_move(uint8_t direction, uint16_t steps)
     if (direction == 2)
     {
         // Toggle direction
-        HAL_GPIO_PinSet(Dir, GPIO_TOGGLE);
+        HAL_GPIO_PinToggle(Dir);
     }
     else
     {
@@ -94,7 +94,7 @@ void StepperDriver_Motor_sleep(uint8_t state)
     {
         case 0: HAL_GPIO_PinSet(SLP, GPIO_HIGH); break;  // Wake
         case 1: HAL_GPIO_PinSet(SLP, GPIO_LOW);  break;  // Sleep
-        case 2: HAL_GPIO_PinSet(SLP, GPIO_TOGGLE); break;
+        case 2: HAL_GPIO_PinToggle(SLP); break;
     }
 }
 
@@ -149,7 +149,7 @@ void StepperDriver_Motor_poll(void)
         if (now - lastStepTime >= semiperiodMs)
         {
             lastStepTime = now;
-            HAL_GPIO_PinSet(Step, GPIO_TOGGLE);
+            HAL_GPIO_PinToggle(Step);
 
             // Count on falling edge
             if (HAL_GPIO_PinGet(Step) == 0)
